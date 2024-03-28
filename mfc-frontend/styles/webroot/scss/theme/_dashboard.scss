@@ -1,0 +1,259 @@
+.dashboard-outer {
+    max-width: 980px;
+    margin: 0 auto;
+    .heading {
+        color: $heading-color;
+        text-align: center;
+        padding-top: 50px;
+        h1 {
+            font-weight: 600;
+            font-size: 42px;
+            line-height: 63px;
+        }
+        .subheading {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    .search-bx {
+        position: relative;
+        max-width: 597px;
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-bottom: 40px;
+        input {
+            background: #eff2f9;
+            border-radius: 100px;
+            width: 597px;
+            padding: 10px 135px 10px 70px;
+            height: 70px;
+            border-color: #eff2f9;
+            font-size: 15px;
+            color: rgba($heading-color, 0.7);
+        }
+        .search-btn {
+            background: #0bbddd;
+            border-radius: 0px 100px 100px 0px;
+            height: 70px;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            color: $white;
+            border: 1px solid #0bbddd;
+            display: inline-block;
+            width: 131px;
+            position: absolute;
+            right: 0px;
+        }
+        .ic-search {
+            font-size: 27px;
+            position: absolute;
+            left: 28px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .dashboard-card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0px -10px;
+        .card {
+            border-radius: 15px;
+            padding: 20px;
+            width: 180px;
+            height: 216px;
+            margin: 20px 10px 0 10px;
+            .roung-bg {
+                background: white;
+                height: 56px;
+                width: 56px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin: 0 auto;
+                i {
+                    font-size: 25px;
+                }
+            }
+        }
+        .color-one {
+            background: #bff8fc;
+        }
+        .color-two {
+            background: #fff1d6;
+        }
+        .color-three {
+            background: #ffece2;
+        }
+
+        .color-four {
+            background: #d2fceb;
+        }
+        .color-five {
+            background: #d8eaff;
+        }
+
+        .count-txt {
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 63px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            color: $heading-color;
+            display: block;
+            text-align: center;
+            padding: 13px 0;
+        }
+        .card-txt {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            display: block;
+            color: $heading-color;
+        }
+    }
+    ::placeholder {
+        font-size: 15px;
+        color: rgba($heading-color, 0.7);
+        opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        font-size: 15px;
+        color: rgba($heading-color, 0.7);
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        font-size: 15px;
+        color: rgba($heading-color, 0.7);
+    }
+}
+
+footer {
+    padding: 20px 0;
+    .footer-txt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .copyright-txt {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            color: rgba($heading-color, 0.4);
+        }
+    }
+    .footer-link {
+        display: flex;
+        align-items: center;
+        li {
+            padding-left: 30px;
+            position: relative;
+            a {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: rgba($heading-color, 0.4);
+            }
+            &:first-child {
+                padding-right: 30px;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 17px;
+                    background: rgba(0, 0, 0, 0.2);
+                    position: absolute;
+                    right: 0px;
+                    top: 2px;
+                }
+            }
+        }
+    }
+}
+
+.dashboard-bg {
+    background: #fff;
+    padding-bottom: 100px;
+}
+
+.finance-toggle {
+    .toggleApp {
+        // width: 350px;
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    .ToggleSwitch {
+        background-color: #dbdfea;
+        height: 18px;
+        width: 35px;
+        border-radius: 55px;
+        &.active {
+            background-color: $accent-color;
+        }
+    }
+    .ToggleSwitch .knob {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        background: $white;
+        border-radius: 50%;
+        left: 0em;
+        transition: left 0.3s ease-out;
+        top: 1px;
+        &.active {
+            background: $white;
+            &::after {
+                content: "";
+                background: red;
+            }
+        }
+    }
+    .ToggleSwitch .knob.active {
+        left: 18px;
+    }
+    .toggle-status {
+        margin-left: 45px;
+        margin-top: -16px;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .knob ~ .toggle-status {
+        color: $heading-color;
+    }
+    .knob.active ~ .toggle-status {
+        color: $heading-color;
+    }
+}
+.dashboard-toggle-tab {
+    .tab-list {
+        display: flex;
+        align-items: center;
+    }
+    .nav-pills {
+        .nav-item {
+            margin-right: 50px;
+            a {
+                background: transparent;
+                font-size: 14px;
+                font-weight: 500;
+                border-bottom: 2px solid transparent;
+                border-radius: 0px;
+                padding: 0px;
+                margin-right: 0px;
+                &.active {
+                    color: #0bbddd;
+                    border-color: #0bbddd;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

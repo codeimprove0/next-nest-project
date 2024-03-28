@@ -1,0 +1,115 @@
+.button {
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 12px;
+  @include border-radius(8px);
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-gps {
+  background: $accent-color;
+  color: #fff;
+  @include border-radius(12.5px);
+  padding: 6px 10px;
+  font-size: 13px;
+
+  i {
+    color: #fff;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}
+
+.btn-line {
+  @extend .button;
+  border: 1px solid $promotional-color;
+  color: $heading-color;
+  min-width: 105px;
+  background: #fff;
+  &:hover {
+    background: $accent-color;
+    color: $white;
+    border-color: $accent-color;
+  }
+}
+
+.btn-solid {
+  @extend .button;
+  background: $promotional-color;
+  border: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.btn-edit-delete {
+  font-size: 12px;
+  color: $heading-color;
+  height: 29px;
+  line-height: 28px;
+  padding: 0px 20px;
+  border: 1px solid#dbdbdb;
+  background: $white;
+  color: $heading-color;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: $accent-color;
+  box-shadow: 0px 6px 6px rgba(11, 189, 221, 0.25);
+  border-radius: 8px;
+  height: 44px;
+  line-height: 41px;
+  font-weight: 500;
+  font-size: 14px;
+  color: $white;
+  cursor: pointer;
+  min-width: 200px;
+  border: 1px solid $accent-color;
+}
+
+.btn-fill {
+  min-width: auto;
+  padding: 0px 10px;
+  height: 34px;
+  line-height: 31px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid #808080;
+  color: $white;
+  background: #808080;
+  border-radius: 6px;
+  cursor: pointer;
+  .ic-check {
+    margin-right: 5px;
+  }
+}
+
+.btn-approve {
+  background: #3bc04d;
+  color: $white;
+  min-width: 138px !important;
+  border-color: #3bc04d;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ic-check {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+button:disabled,
+button[disabled] {
+  background: #919191;
+  border-color: #919191;
+  box-shadow: none;
+}

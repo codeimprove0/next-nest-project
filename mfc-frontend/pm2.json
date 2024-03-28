@@ -1,0 +1,16 @@
+{
+    "apps": [
+      {
+        "name": "insurancebox_frontend",
+        "script": "npm",
+        "args": "start",
+        "watch": true,
+        "ignore_watch": ["public", "src",  "node_modules", "logs"],
+        "instances": 1,
+        "env": {
+          "PM2_SERVE_PATH": "./build",
+          "PM2_SERVE_PORT": 8006 
+        }
+      }
+    ]
+  }
